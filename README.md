@@ -1,98 +1,102 @@
-## Phantom for Jekyll
+<div align="center">
 
-A minimalist, responsive portfolio theme for [Jekyll](http://jekyllrb.com/) with Bootstrap.
+# jekyll-theme-H2O-ac
 
-![preview](preview.jpg)
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-h2o-ac.svg)](https://badge.fury.io/rb/jekyll-theme-h2o-ac)
+[![pages-build-deployment](https://github.com/zhonger/jekyll-theme-H2O-ac/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/zhonger/jekyll-theme-H2O-ac/actions/workflows/pages/pages-build-deployment)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/60e1e5fb75b8411da3df2fbed7243aa6)](https://www.codacy.com/gh/zhonger/jekyll-theme-H2O-ac/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zhonger/jekyll-theme-H2O-ac&amp;utm_campaign=Badge_Grade)
+[![GitHub license](https://img.shields.io/github/license/zhonger/jekyll-theme-H2O-ac)](https://github.com/zhonger/jekyll-theme-H2O-ac/blob/master/LICENSE)
+![Jekyll Version](https://img.shields.io/badge/Jekyll-4.2.1-blue)
+![Ruby Version](https://img.shields.io/badge/Ruby-3.1.0-blue)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fzhonger%2Fjekyll-theme-H2O-ac.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fzhonger%2Fjekyll-theme-H2O-ac?ref=badge_shield)
 
-[See it in action](http://jamigibbs.github.io/phantom/).
+基于 Jekyll 和 [H2O](https://github.com/kaeyleo/jekyll-theme-H2O) 主题、适合学术研究人员和运维开发人员的博客主题模板。
 
-## Fancy using it for your own site?
+An Jekyll theme for researchers and maintainers based on Jekyll and [H2O](https://github.com/kaeyleo/jekyll-theme-H2O) theme.
 
-Here are some steps to get you started:
-
-1. Clone this repo and cd into the directory:
-
-  ```bash
-  git clone https://github.com/jamigibbs/phantom.git your-dir-name && cd your-dir-name
-  ```
-
-2. Run:
-
-  ```bash
-  gem install bundler
-  bundle install
-  bundle exec jekyll serve
-  ```
-
-  You may need to append your commands with `sudo` if you're getting a permissions error.
-
-  _Don't have Jekyll yet? [Get `er installed then!](http://jekyllrb.com/docs/installation/)_
-
-3. Visit in your browser at:
-
-  `http://127.0.0.1:4000`
-
-## Launching with Github Pages :rocket:
-
-Jekyll + Github pages is a marriage made in heaven. You can [use your own custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) or use the default Github url (ie. http://username.github.io/repository) and not bother messing around with DNS settings.
-
-## Theme Features
-
-### Navigation
-
-Navigation can be customized in `_config.yml` under the `nav_item` key. Default settings:
-
-```yaml
-nav_item:
-    - { url: '/', text: 'Home' }
-    - { url: '/about', text: 'About' }
-```
-
-Set the `nav_enable` variable to false in `_config.yml` to disable navigation.
-
-### Contact Form
-
-You can display a contact form within the modal window template. This template is already setup to use the [Formspree](https://formspree.io) email system. You'll just want to add your email address to the form in `/_includes/contact-modal.html`.
-
-Place the modal window template in any place you'd like the user to click for the contact form.
-The template will display a link to click for the contact form modal window:
-
-```liquid
-{% include contact.html %}
-{% include contact-modal.html %}
-```
-
-### Animation Effects
-
-Animations with CSS classes are baked into the theme. To animate a section or element, simply add the animation classes:
-
-```html
-<div id="about-me" class="wow fadeIn">
-  I'm the coolest!
 </div>
-```
 
-For a complete list of animations, see the [animation list](http://daneden.github.io/animate.css/).
+### Preview
 
-### Pagination
+#### [在线预览 Live Demo →](https://h2o-ac.pages.dev/)
 
-By default, pagination on the home page will activate after 10 posts. You can change this within `_config.yml`. You can add the pagination to other layouts with:
+![vgy.me](https://i.vgy.me/pICzcE.png)
+![vgy.me](https://i.vgy.me/0kmQ1j.png)
 
-```liquid
-  {% for post in paginator.posts %}
-    {% include post-content.html %}
-  {% endfor %}
+如果你喜欢这个博客模板，请在右上角star一下，非常感谢～
 
-  {% include pagination.html %}
-```
+If you like this theme or using it, please give a ⭐️ for motivation ;)
 
-Read more about the [pagination plugin](http://jekyllrb.com/docs/pagination/).
+如果想体验手机浏览效果，可以扫一下二维码：
 
-## Credit
+![vgy.me](https://i.vgy.me/XGUDp6.png)
 
-* Bootstrap, http://getbootstrap.com/, (C) 2011 - 2016 Twitter, Inc., [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+Using your smartphone to scan the QR Code
 
-* Wow, https://github.com/matthieua/WOW, (C) 2014 - 2016 Matthieu Aussaguel
-, [GPL](https://github.com/matthieua/WOW#open-source-license)
+### New Features compared with H2O， 与 H2O 不同的新特性
 
-* Animate.css, https://github.com/daneden/animate.css, (C) 2016 Daniel Eden, [MIT](https://github.com/daneden/animate.css/blob/master/LICENSE)
+#### CN
+
+- 学术首页
+- 归档页
+- 系统日志页
+- 社交图标扩展
+- 查看大图
+- 代码高亮优化
+- 字数统计及阅读时间估计
+- 配置项
+- 前端自动构建工作流优化
+- 文章页侧边导航
+- Waline 评论系统
+- 深色模式切换按钮
+- 时间本地化
+- PWA
+- 提示框支持
+- 文章置顶
+- 版权显式声明
+
+#### EN
+
+- Academic Home Page
+- Archive Page
+- System Logs Page
+- An extened SNS icon set
+- Enlarge any pictures in articles
+- Optimize the code highlighting
+- Words Counts and evaluate needed time
+- New Settings
+- Optimize the automatic workflow for static files
+- The TOC for posts
+- Waline comments
+- Dark mode switch button
+- Time localization
+- PWA
+- Premonition
+- Top article pin
+- Copyright statement for articles
+
+### Usage 快速开始
+
+请访问 [H2O-ac theme for Jekyll](https://lisz.me/tech/webmaster/new-theme-h2o-ac.html) 查看详情。
+
+Please refer to [H2O-ac theme for Jekyll](https://lisz.me/tech/webmaster/new-theme-h2o-ac.html) for details.
+
+### Contribution 贡献
+
+Any types of contribution are welcome. Thanks.
+
+接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的 ```Pull Request```
+
+#### 感谢参与 H2O 代码贡献的伙伴
+
+- [kaeyleo](https://github.com/kaeyleo/)
+- [Ray-Eldath](https://github.com/Ray-Eldath)
+- [sctop](https://github.com/sctop)
+- [bananaappletw](https://github.com/bananaappletw)
+- [moycat](https://github.com/moycat)
+
+### License 许可证
+
+Jekyll-Theme-H2O-ac is licensed under [MIT](https://github.com/zhonger/jekyll-theme-H2O-ac/blob/master/LICENSE).
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fzhonger%2Fjekyll-theme-H2O-ac.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fzhonger%2Fjekyll-theme-H2O-ac?ref=badge_large)
